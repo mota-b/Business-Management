@@ -37,6 +37,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -69,6 +71,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\ModelsDB\OrderModelDB.cs" />
+    <Compile Include="Models\EntityModels\ClientModel.cs" />
+    <Compile Include="Models\EntityModels\ProductModel.cs" />
+    <Compile Include="Models\EntityModels\OrderModel.cs" />
+    <Compile Include="Models\EntityModels\ReceiptModel.cs" />
+    <Compile Include="Models\ModelsDB\ProductModelDB.cs" />
+    <Compile Include="Models\ModelsDB\ClientModelDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -93,6 +102,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Views\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
